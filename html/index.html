@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날씨 어때?</title>
+
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/home.css">
+</head>
+<body>
+    <nav class="nav-container">
+        <a class="f-bold" href="#">날씨 어때?</a>
+        <!-- <div class="nav-items">
+            <a href="#">전국 날씨</a>
+            <a href="#">주간 날씨</a>
+        </div> -->
+    </nav>
+
+    <main>
+        <div class="weather-container">
+            <section>
+                <div class="location-info-container">
+                    <span class="f-bold" id="location-info">내 위치</span>
+                    <button id="location-btn">내 위치</button>
+                </div>
+                <div class="weather-info-container">
+                    <img class="weather-icon" src="https://dummyimage.com/50x50/eee/888" alt="날씨에 따른 옷차림">
+                    <p class="today-weather">
+                        <span class="f-bold" id="T1H">-</span>
+                        <span>&deg; </span>
+                        <span id="weather-summary"></span>
+                    </p>
+                    <!-- <div>
+                        <span>날씨 요약</span>
+                        <span>어제보다 1.7&deg; &uparrow; </span>
+                    </div> -->
+                </div>
+                <div class="weather-info-more-container">
+                    <div class="info-box">
+                        <span class="f-bold">최저/최고</span>
+                        <p>
+                            <span id="TMN">-</span><span>/</span><span id="TMX">-</span>
+                        </p>
+                    </div>
+                    <!-- <div class="info-box">
+                        <span>체감 온도</span>
+                        <span></span>
+                    </div> -->
+                    <div class="info-box">
+                        <span class="f-bold">날씨</span>
+                        <span id="SKY">-</span>
+                    </div>
+                    <div class="info-box">
+                        <span class="f-bold">습도</span>
+                        <span id="REH">-</span>
+                    </div>
+                    <div class="info-box">
+                        <span class="f-bold">풍향</span>
+                        <span id="VEC">-</span>
+                    </div>
+                    <div class="info-box">
+                        <span class="f-bold">풍속</span>
+                        <span id="WSD">-</span>
+                    </div>
+                    <!-- <div class="info-box">
+                        <span>미세먼지</span>
+                        <span></span>
+                    </div>
+                    <div class="info-box">
+                        <span>초미세먼지</span>
+                        <span></span>
+                    </div> -->
+                </div>
+            </section>
+            <div class="weather-img-container">
+                <img class="weather-img" src="https://dummyimage.com/1000x1000/eee/888" alt="날씨에 따른 옷차림">
+            </div>
+        </div>
+        <section class="weather-table-container">
+            <table>
+                <thead>
+                    <tr id="weather-table-time">
+                        <th>오늘</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="weather-table-sky">
+                        <td>날씨</td>
+                    </tr>
+                    <tr id="weather-table-tmp">
+                        <td>기온</td>
+                    </tr>
+                    <tr id="weather-table-pop">
+                        <td>강수확률</td>
+                    </tr>
+                    <tr id="weather-table-pcp">
+                        <td>강수량</td>
+                    </tr>
+                    <tr id="weather-table-wsd">
+                        <td>바람</td>
+                    </tr>
+                    <tr id="weather-table-reh">
+                        <td>습도</td>
+                    </tr>
+                </tbody>
+                <!-- <thead>
+                    <tr>
+                        <td>category</td>
+                        <td>fcstDate</td>
+                        <td>fcstTime</td>
+                        <td>fcstValue</td>
+                        <td>nx</td>
+                        <td>ny</td>
+                    </tr>
+                </thead>
+                <tbody class="weather-table-body">
+
+                </tbody> -->
+            </table>
+        </section>
+
+        <!-- <section class="weather-weekly-container">
+            <h2>주간 날씨</h2>
+
+        </section> -->
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

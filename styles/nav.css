@@ -1,0 +1,16 @@
+.nav-container {
+    display: flex;
+    padding: 16px 200px;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+.ul {
+    display: flex;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+.nav-items a {
+    margin-left: 16px;
+}

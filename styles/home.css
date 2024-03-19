@@ -1,0 +1,107 @@
+main {
+    padding: 16px 200px;
+}
+.weather-container {
+    display: flex;
+}
+.weather-container section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.weather-img-container {
+    width: 40%;
+    padding: 16px;
+}
+.weather-img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.weather-container section {
+    padding: 16px;
+}
+.location-info-container {
+    display: flex;
+    justify-content: space-between;
+}
+.location-info-container button {
+    border: none;
+    cursor: pointer;
+    color: deepskyblue;
+    background: none;
+}
+.location-info-container button:hover {
+    color: cornflowerblue;
+}
+
+.weather-info-container {
+    display: flex;
+    align-items: center;
+}
+.weather-icon {
+    width: 46x;
+    height: 46px;
+}
+.today-weather {
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: 12px;
+}
+
+
+.weather-info-more-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 16px;
+}
+.info-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.info-box:nth-child(2n+1) {
+    margin-right: 8px;
+}
+.info-box:nth-child(2n) {
+    margin-left: 8px;
+}
+
+.weather-table-container {
+    padding: 16px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.weather-table-container::-webkit-scrollbar {
+    display: none;
+}
+table {
+    width: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 15px #ccc8;
+    border-radius: 8px;
+    margin-top: 32px;
+}
+th, td {
+    border-right: 1px solid #eee;
+    padding: 16px;
+}
+th {
+    border-bottom: 1px solid #eee;
+}
+
+
+.weather-weekly-container {
+    padding: 16px;
+}
+
+
+
+
+
+.f-bold {
+    font-weight: 900;
+}
